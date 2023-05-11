@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 
 def decode(morse)
   morse_alphabet = {
@@ -8,8 +6,8 @@ def decode(morse)
     '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T', '..-' => 'U',
     '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y', '--..' => 'Z', '.----.' => "'", ' ' => '',
     '   ' => ' '
-  }.freeze
-  decoded_message = morse.split(/(\s{1,})/).map { |char| morse_alphabet[char] }.join('')
+  }
+  decoded_message = morse.split(/(\s{1,})/).map { |char| morse_alphabet[char] }.join()
   print decoded_message
 end
 
