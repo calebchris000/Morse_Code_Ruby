@@ -1,4 +1,4 @@
-MORSE_ALPHABET = {
+morse_alphabets = {
   '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E', '..-.' => 'F', '--.' => 'G',
   '....' => 'H', '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L', '--' => 'M', '-.' => 'N',
   '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T', '..-' => 'U',
@@ -7,7 +7,7 @@ MORSE_ALPHABET = {
 }
 
 def decode_char(char)
-  MORSE_ALPHABET[char]
+  morse_alphabets[char]
 end
 
 def decode_word(word)
