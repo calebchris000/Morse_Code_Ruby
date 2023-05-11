@@ -1,4 +1,3 @@
-
 def decode(morse)
   morse_alphabet = {
     '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E', '..-.' => 'F', '--.' => 'G',
@@ -7,9 +6,8 @@ def decode(morse)
     '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y', '--..' => 'Z', '.----.' => "'", ' ' => '',
     '   ' => ' '
   }
-  decoded_message = morse.split(/(\s{1,})/).map { |char| morse_alphabet[char] }.join()
+  decoded_message = morse.split(/(\s{1,})/).map { |char| morse_alphabet[char] }.join
   print decoded_message
 end
-
 
 decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
